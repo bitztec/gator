@@ -41,6 +41,8 @@ func main() {
 	supportedCmds.register("register", handleRegister)
 	supportedCmds.register("reset", handleReset)
 	supportedCmds.register("users", handleUsers)
+	supportedCmds.register("agg", handleAgg)
+	supportedCmds.register("addfeed", handleAddFeed)
 
 	args := os.Args
 	if len(args) < 2 {

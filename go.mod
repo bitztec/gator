@@ -3,8 +3,10 @@ module github.com/can-ek/gator
 go 1.25.3
 
 replace github.com/can-ek/gator/config v0.0.0 => ./internal/config
+replace github.com/can-ek/gator/rss v0.0.0 => ./internal/rss
 
 require github.com/can-ek/gator/config v0.0.0
+require github.com/can-ek/gator/rss v0.0.0
 
 require (
 	github.com/google/uuid v1.6.0 // indirect
