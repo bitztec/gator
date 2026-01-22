@@ -32,7 +32,7 @@ func handleAddFeed(s *state, cmd command, user intdb.User) error {
 		return err
 	}
 
-	feed_params := intdb.CreateFeedFollowParams{
+	feedParams := intdb.CreateFeedFollowParams{
 		ID:        uuid.New(),
 		CreatedAt: currTime,
 		UpdatedAt: currTime,
@@ -40,7 +40,7 @@ func handleAddFeed(s *state, cmd command, user intdb.User) error {
 		FeedID:    feed.ID,
 	}
 
-	_, err = s.db.CreateFeedFollow(ctx, feed_params)
+	_, err = s.db.CreateFeedFollow(ctx, feedParams)
 	if err != nil {
 		return err
 	}
