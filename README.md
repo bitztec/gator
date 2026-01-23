@@ -18,7 +18,7 @@ sudo apt install postgresql postgresql-contrib
 
 ```
 {
-    "db_url":"postgres://<username>:<password>@<host>:<port>/database",
+    "db_url":"postgres://<username>:<password>@<host>:<port>/gator?sslmode=disable",
     "current_user_name":"<a user name>"
 } 
 
